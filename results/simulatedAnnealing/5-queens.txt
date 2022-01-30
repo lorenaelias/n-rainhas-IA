@@ -1,0 +1,132 @@
+--------------------------------
+
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+ Q  -  -  -  - 
+h(final): 0
+número de passos: 79
+Estado objetivo alcançado
+
+Tempo total: 1.1646747589111328 ms
+
+--------------------------------
+
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+ Q  -  -  -  - 
+ -  -  -  Q  - 
+h(final): 0
+número de passos: 80
+Estado objetivo alcançado
+
+Tempo total: 1.0521411895751953 ms
+
+--------------------------------
+
+ Q  -  -  -  - 
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+h(final): 0
+número de passos: 88
+Estado objetivo alcançado
+
+Tempo total: 1.2254714965820312 ms
+
+--------------------------------
+
+ Q  -  -  -  - 
+ -  -  Q  -  - 
+ -  -  -  -  Q 
+ -  Q  -  -  - 
+ -  -  -  Q  - 
+h(final): 0
+número de passos: 88
+Estado objetivo alcançado
+
+Tempo total: 1.1720657348632812 ms
+
+--------------------------------
+
+ -  -  Q  -  - 
+ Q  -  -  -  - 
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+h(final): 0
+número de passos: 101
+Estado objetivo alcançado
+
+Tempo total: 2.162456512451172 ms
+
+--------------------------------
+
+ Q  -  -  -  - 
+ -  -  Q  -  - 
+ -  -  -  -  Q 
+ -  Q  -  -  - 
+ -  -  -  Q  - 
+h(final): 0
+número de passos: 62
+Estado objetivo alcançado
+
+Tempo total: 0.7197856903076172 ms
+
+--------------------------------
+
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+ Q  -  -  -  - 
+h(final): 0
+número de passos: 53
+Estado objetivo alcançado
+
+Tempo total: 0.6556510925292969 ms
+
+--------------------------------
+
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+ Q  -  -  -  - 
+h(final): 0
+número de passos: 68
+Estado objetivo alcançado
+
+Tempo total: 0.8323192596435547 ms
+
+--------------------------------
+
+ Q  -  -  -  - 
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+h(final): 0
+número de passos: 27
+Estado objetivo alcançado
+
+Tempo total: 0.35881996154785156 ms
+
+--------------------------------
+
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
+ Q  -  -  -  - 
+ -  -  -  Q  - 
+h(final): 0
+número de passos: 175
+Estado objetivo alcançado
+
+Tempo total: 3.5490989685058594 ms
+
+
+Média de tempo: 1.2892484664916992 ms

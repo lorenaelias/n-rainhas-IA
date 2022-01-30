@@ -1,0 +1,122 @@
+ -  -  Q  -  -  -  - 
+ -  -  -  -  Q  -  - 
+ -  -  -  -  -  -  Q 
+ -  Q  -  -  -  -  - 
+ -  -  -  Q  -  -  - 
+ -  -  -  -  -  Q  - 
+ Q  -  -  -  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 11.991262435913086 ms
+
+ -  -  Q  -  -  -  - 
+ Q  -  -  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  Q  -  - 
+ -  -  -  -  -  -  Q 
+ -  -  -  Q  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 3.185749053955078 ms
+
+ -  -  -  Q  -  -  - 
+ Q  -  -  -  -  -  - 
+ -  -  Q  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  -  -  Q 
+ -  -  -  -  Q  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 1.4519691467285156 ms
+
+ -  -  Q  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  Q  -  - 
+ Q  -  -  -  -  -  - 
+ -  -  -  Q  -  -  - 
+ -  -  -  -  -  -  Q 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 6.420373916625977 ms
+
+ Q  -  -  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  -  -  Q  -  -  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  -  -  Q 
+ -  -  -  -  Q  -  - 
+ -  -  Q  -  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 43.35474967956543 ms
+
+ -  -  -  -  -  -  Q 
+ -  -  Q  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  Q  -  - 
+ Q  -  -  -  -  -  - 
+ -  -  -  Q  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 1.4591217041015625 ms
+
+ Q  -  -  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  -  -  Q  -  -  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  -  -  Q 
+ -  -  -  -  Q  -  - 
+ -  -  Q  -  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 5.606889724731445 ms
+
+ -  Q  -  -  -  -  - 
+ -  -  -  Q  -  -  - 
+ -  -  -  -  -  Q  - 
+ Q  -  -  -  -  -  - 
+ -  -  Q  -  -  -  - 
+ -  -  -  -  Q  -  - 
+ -  -  -  -  -  -  Q 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 1.756906509399414 ms
+
+ -  -  -  -  -  Q  - 
+ -  Q  -  -  -  -  - 
+ -  -  -  -  Q  -  - 
+ Q  -  -  -  -  -  - 
+ -  -  -  Q  -  -  - 
+ -  -  -  -  -  -  Q 
+ -  -  Q  -  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 1.4388561248779297 ms
+
+ -  -  -  -  Q  -  - 
+ Q  -  -  -  -  -  - 
+ -  -  -  Q  -  -  - 
+ -  -  -  -  -  -  Q 
+ -  -  Q  -  -  -  - 
+ -  -  -  -  -  Q  - 
+ -  Q  -  -  -  -  - 
+
+
+Final: Atingiu o estado objetivo
+Tempo total: 0.9176731109619141 ms
+
+
+Média de tempo: 7.758355140686035 ms
