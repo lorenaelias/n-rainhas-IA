@@ -4,13 +4,15 @@ import time
 
 def printBoard(board):
   n = len(board)
+  f = open("results/simulatedAnnealing/"+str(numberOfQueens)+'-queens.txt', "a")
+  f.write("--------------------------------\n\n")
   for i in range(n-1, -1, -1):
     for j in range(n):
       if board[j] == i: 
-        print(' Q ', end='')
+        f.write(' Q ')
       else: 
-        print(' - ', end='')
-    print()
+        f.write(' - ')
+    f.write("\n")
 
 def generateBoard(n):
   board = [random.randint(0, n-1) for _ in range(n)]
@@ -85,31 +87,40 @@ def simulatedAnnealing(n, board):
 
 if __name__ == "__main__":
 
-  start = time.time()
+  queens = [5, 7, 8, 9, 10]
 
-  numberOfQueens = 8
-  board = generateBoard(numberOfQueens)
+  for queen in range(len(queens)):
+    
+    mean_time = 0
+    queenProblem = 0
+    
+    for ex in range(10):
+      numberOfQueens = queens[queen]
 
-  print("Tabuleiro inicial")
-  printBoard(board)
+      start = time.time()
 
-  print("\nFinal = ")
-  steps, board = simulatedAnnealing(numberOfQueens, board)
-  
-  
-  printBoard(board)
-  h = calculateObjectiveFunction(numberOfQueens, board)
+      board = generateBoard(numberOfQueens)
 
-  print("h(final) =", h)
-  print("número de passos: ", steps)
+      print("\nFinal = ")
+      steps, board = simulatedAnnealing(numberOfQueens, board)
+      
+      printBoard(board)
+      h = calculateObjectiveFunction(numberOfQueens, board)
 
-  if h != 0:
-    print("Limite de movimentos atingido")
-  else:
-    print("Estado objetivo alcançado")
+      end = time.time()
+      total = end-start
+      mean_time += total
+      f = open("results/simulatedAnnealing/"+str(numberOfQueens)+'-queens.txt', "a")
+      f.write(f"h(final): {h}\n")
+      f.write(f"número de passos: {steps}\n")
 
-  end = time.time()
+      if h != 0:
+        f.write("Limite de movimentos atingido\n")
+      else:
+        f.write("Estado objetivo alcançado\n")
+      f.write(f"\nTempo total: {total*1000} ms\n\n")
+      f.close()
 
-  print(f"Tempo total: {(end-start)*1000} ms")
-
-  print()
+    f = open("results/simulatedAnnealing/"+str(numberOfQueens)+'-queens.txt', "a")
+    f.write(f"\nMédia de tempo: {(mean_time/10)*1000} ms")
+    f.close()

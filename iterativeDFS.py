@@ -1,5 +1,6 @@
 import numpy as np
 import copy
+import time
 
 class IterativeDFS:
   def __init__(self, n):
@@ -9,14 +10,19 @@ class IterativeDFS:
     self.board = [[0 for i in range(n)] for j in range(n)]
 
   def printSolution(self):
+    f = open("results/"+str(self.n)+'-queens.txt', "a")
+    f.write(f'\n\nExecução {ex+1}--------------------------------\n\n')
+    f.write("Profundidade: " + str(self.depth))
+    f.write("\n")
     for i in range(self.n):
       for j in range(self.n):
         if (self.board[i][j] == 1):
-          print("Q", end=" ")
+          f.write("Q ")
         else:
-          print("-", end=" ")
-      print()
-    print("---------------------------------")
+          f.write("- ")
+      f.write("\n")
+    f.write("----------------------------------------------------\n")
+    f.close()
 
   def isValidQueen(self, board, row, col):
     for i in range(self.n):
@@ -109,15 +115,37 @@ def generateRandomNumber(min, max):
   return np.random.randint(min, max)
 
 if __name__ == '__main__':
-  numberOfQueens = int(input('Número de rainhas: '))
-  
-  queenProblem = IterativeDFS(n = numberOfQueens)
 
-  # inserir rainhas no board
-  for i in range(numberOfQueens):
-    j = generateRandomNumber(0, numberOfQueens)
-    queenProblem.board[i][j] = 1
-    queenProblem.queensPositions[i] = j
-  
-  while queenProblem.solve() == False:
-    queenProblem.depth += 1
+  queens = [10]
+
+  for queen in range(len(queens)):
+    
+    mean_time = 0
+    queenProblem = 0
+    
+    for ex in range(10):
+      numberOfQueens = queens[queen]
+
+      start = time.time()
+
+      queenProblem = IterativeDFS(n = numberOfQueens)
+
+      # inserir rainhas no board
+      for i in range(numberOfQueens):
+        j = generateRandomNumber(0, numberOfQueens)
+        queenProblem.board[i][j] = 1
+        queenProblem.queensPositions[i] = j
+      
+      while queenProblem.solve() == False:
+        queenProblem.depth += 1
+
+      end = time.time()
+      total = end-start
+      mean_time += total
+      f = open("results/"+str(numberOfQueens)+'-queens.txt', "a")
+      f.write(f"\nTempo total: {total*1000} ms\n\n")
+      f.close()
+
+    f = open("results/"+str(numberOfQueens)+'-queens.txt', "a")
+    f.write(f"\nMédia de tempo: {(mean_time/10)*1000} ms")
+    f.close()

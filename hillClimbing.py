@@ -3,13 +3,15 @@ import time
 
 def printBoard(board):
   n = len(board)
+  f = open("results/hillClimbing/"+str(n)+'-queens.txt', "a")
   for i in range(n-1, -1, -1):
     for j in range(n):
       if board[j] == i: 
-        print(' Q ', end='')
+        f.write(' Q ')
       else: 
-        print(' - ', end='')
-    print()
+        f.write(' - ')
+    f.write("\n")
+  f.close()
 
 def generateBoard(n):
   board = [random.randint(0, n-1) for _ in range(n)]
@@ -81,27 +83,28 @@ def hillClimbing(n, board, test = False):
   numMovements = 0
 
 
-  ## fica no laço até atingir o estado objetivo ou atingir o limite de iterações
+  # fica no laço até atingir o estado objetivo ou atingir o limite de iterações
   while(numMovements < 1000):
-    ## get optimal next moves 
+    # pega os proximos movimentos otimos possiveis
     flag, newHeuristicValue, col, row = nextMovement(heuristicValue, board)
 
+    f = open("results/hillClimbing/"+str(numberOfQueens)+'-queens.txt', "a")
     if(flag == False):    # nao encontrou nenhum movimento otimo
       if not test:
-        print("\nFinal = ")
+        f.write("\n\nFinal: ")
         printBoard(board)
-        print("h(final) =", heuristicValue)
+        print("h(final): ", heuristicValue)
         print("Número de movimentos: ", numMovements)
-        print("Atingiu um máximo local")
+        f.write("Atingiu um máximo local")
       return numMovements, board, heuristicValue
     elif newHeuristicValue == 0:       # atingiu o estado objetivo
       board[col] = row
       if not test:
-        print("\nFinal = ")
+        f.write("\n\nFinal: ")
         printBoard(board)
-        print("h(final) =", newHeuristicValue)
+        print("h(final): ", newHeuristicValue)
         print("Número de movimentos: ", numMovements)
-        print("Atingiu o estado objetivo")
+        f.write("Atingiu o estado objetivo")
       return numMovements, board, heuristicValue
     else:               # encontrou um movimento otimo
       board[col] = row
@@ -110,10 +113,12 @@ def hillClimbing(n, board, test = False):
     numMovements += 1
   
   if not test:
-    print("\nFinal = ")
+    f.write("\n\nFinal: ")
     printBoard(board)
     print(numMovements)
-    print("Alcançou limite de movimentos e não encontrou solução")
+    f.write("Alcançou limite de movimentos e não encontrou solução")
+
+  f.close()
 
   return numMovements, board, newHeuristicValue
 
@@ -121,18 +126,28 @@ def hillClimbing(n, board, test = False):
 
 if __name__ == "__main__":
 
-  start = time.time()
+  queens = [5, 7, 8, 9, 10]
 
-  numberOfQueens = 8
-  board = generateBoard(numberOfQueens)
+  for queen in range(len(queens)):
+    
+    mean_time = 0
+    queenProblem = 0
+    
+    for ex in range(10):
+      numberOfQueens = queens[queen]
 
-  print("Tabuleiro inicial")
-  printBoard(board)
+      start = time.time()
 
-  numMovements, board, h = hillClimbing(numberOfQueens, board)
+      board = generateBoard(numberOfQueens)
+      numMovements, board, h = hillClimbing(numberOfQueens, board)
 
-  end = time.time()
+      end = time.time()
+      total = end-start
+      mean_time += total
+      f = open("results/hillClimbing/"+str(numberOfQueens)+'-queens.txt', "a")
+      f.write(f"\nTempo total: {total*1000} ms\n\n")
+      f.close()
 
-  print(f"Tempo total: {(end-start)*1000} ms")
-
-  print()
+    f = open("results/hillClimbing/"+str(numberOfQueens)+'-queens.txt', "a")
+    f.write(f"\nMédia de tempo: {(mean_time/10)*1000} ms")
+    f.close()
