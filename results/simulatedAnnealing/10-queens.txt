@@ -10,7 +10,7 @@
  -  -  -  -  -  Q  -  -  -  - 
  -  -  Q  -  -  -  -  -  -  - 
  Q  -  -  -  -  -  -  -  -  - 
-h(final): 0
+
 número de passos: 447
 Estado objetivo alcançado
 
@@ -28,7 +28,7 @@ Tempo total: 36.097049713134766 ms
  -  -  Q  -  -  -  -  -  -  - 
  -  -  -  -  -  -  -  -  Q  - 
  -  -  -  -  -  -  Q  -  -  - 
-h(final): 0
+
 número de passos: 268
 Estado objetivo alcançado
 
@@ -46,7 +46,7 @@ Tempo total: 20.157575607299805 ms
  -  -  -  -  Q  -  -  -  -  - 
  -  -  -  -  -  -  Q  -  -  - 
  -  -  -  -  -  -  -  -  -  Q 
-h(final): 0
+
 número de passos: 416
 Estado objetivo alcançado
 
@@ -64,7 +64,7 @@ Tempo total: 35.72273254394531 ms
  -  -  -  -  -  -  -  -  Q  - 
  -  -  -  -  -  Q  -  -  -  - 
  Q  -  -  -  -  -  -  -  -  - 
-h(final): 0
+
 número de passos: 376
 Estado objetivo alcançado
 
@@ -82,7 +82,7 @@ Tempo total: 28.68366241455078 ms
  -  Q  -  -  -  -  -  -  -  - 
  -  -  -  -  Q  -  -  -  -  - 
  -  -  -  -  -  -  -  -  Q  - 
-h(final): 0
+
 número de passos: 238
 Estado objetivo alcançado
 
@@ -100,7 +100,7 @@ Tempo total: 14.342308044433594 ms
  -  -  -  -  -  -  -  -  -  Q 
  -  -  -  -  -  -  Q  -  -  - 
  -  Q  -  -  -  -  -  -  -  - 
-h(final): 0
+
 número de passos: 193
 Estado objetivo alcançado
 
@@ -118,7 +118,7 @@ Tempo total: 11.055469512939453 ms
  -  -  -  -  -  -  -  Q  -  - 
  -  -  -  -  -  Q  -  -  -  - 
  Q  -  -  -  -  -  -  -  -  - 
-h(final): 0
+
 número de passos: 289
 Estado objetivo alcançado
 
@@ -136,7 +136,7 @@ Tempo total: 20.51067352294922 ms
  -  -  -  -  -  -  -  -  Q  - 
  -  Q  -  -  -  -  -  -  -  - 
  -  -  -  Q  -  -  -  -  -  - 
-h(final): 0
+
 número de passos: 490
 Estado objetivo alcançado
 
@@ -154,7 +154,7 @@ Tempo total: 42.214155197143555 ms
  -  Q  -  -  -  -  -  -  -  - 
  -  -  -  -  Q  -  -  -  -  - 
  -  -  Q  -  -  -  -  -  -  - 
-h(final): 0
+
 número de passos: 174
 Estado objetivo alcançado
 
@@ -172,7 +172,7 @@ Tempo total: 7.639646530151367 ms
  -  -  -  -  Q  -  -  -  -  - 
  -  -  -  -  -  -  -  -  Q  - 
  -  -  -  -  -  Q  -  -  -  - 
-h(final): 0
+
 número de passos: 205
 Estado objetivo alcançado
 
